@@ -1,3 +1,12 @@
+1. 修改端口```"start": "set PORT=3001 && react-scripts start"```
+
+2. 暴露配置文件```npm run eject```
+
+3. 查看本地```serve -s build```,  访问http://localhost:5000/
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -67,4 +76,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-1. 修改端口```"start": "set PORT=3001 && react-scripts start"```
