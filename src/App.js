@@ -8,20 +8,7 @@ import page1 from './pages/page1';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <aside>
-        hha 
-        {/* <Switch>
+      {/* <Switch>
                   {
                       routers.map((route,index) => {
                           return(
@@ -35,7 +22,6 @@ function App() {
                   }
           </Switch> */}
         {/* <Route path="/page1" component={page1}/> */}
-      </aside>
     </div>
   );
 }
