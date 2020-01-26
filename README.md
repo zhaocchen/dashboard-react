@@ -1,11 +1,6 @@
-1. 修改端口```"start": "set PORT=3001 && react-scripts start"```
-
-2. 暴露配置文件```npm run eject```
-
-3. 查看本地```serve -s build```,  访问http://localhost:5000/
 
 
-
+## 官网开发指南
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -76,3 +71,27 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+
+## 配置修改说明
+
+### 1. 开发启动
+
+修改端口```"start": "set PORT=3001 && react-scripts start"```
+
+修改启动开发自动打开浏览器
+
+### 2. 暴露配置文件```npm run eject```
+
+### 3. 查看本地```serve -s build```,  访问http://localhost:5000/
+
+### 4. 配置绝对路径
+
+- @指向src/.
+- components指向src/components.
+
+/config/webpack.config.js中alias添加
+
+```
+'@': path.resolve(__dirname, '../src'),
+'components': path.resolve(__dirname, '../src/components'),
+```
