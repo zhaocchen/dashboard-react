@@ -8,6 +8,7 @@ import page1 from './pages/page1';
 function App() {
   return (
     <div className="App">
+      哈哈
       {/* <Switch>
                   {
                       routers.map((route,index) => {
