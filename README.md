@@ -109,3 +109,20 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
       }]
     ]
 ```
+
+### 6. 启动编译后的项目
+
+添加静态服务器（static server）
+
+```
+npm i -g serve
+serve -s build
+// 本地查看（默认）http://localhost:5000/
+// script命令启动
+npm run serve
+```
+
+### 分离Jest
+
+运行命令 jest 后会自动运行项目下所有.test.js和.spec.js这种格式的文件
+
