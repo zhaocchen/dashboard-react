@@ -82,9 +82,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### 2. 暴露配置文件```npm run eject```
 
-### 3. 查看本地```serve -s build```,  访问http://localhost:5000/
-
-### 4. 配置绝对路径
+### 3. 配置绝对路径
 
 - @指向src/.
 - components指向src/components.
@@ -96,7 +94,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 'components': path.resolve(__dirname, '../src/components'),
 ```
 
-### 5. 添加ui组件库, 配置按需加载
+### 4. 添加ui组件库, 配置按需加载
 
 .babelrc添加配置
 
@@ -110,7 +108,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     ]
 ```
 
-### 6. 启动编译后的项目
+### 5. 启动编译后的项目
 
 添加静态服务器（static server）
 
@@ -118,11 +116,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 npm i -g serve
 serve -s build
 // 本地查看（默认）http://localhost:5000/
-// script命令启动
+// 添加package.json/script命令启动
+"serve": "serve -l 5001 -s build",
 npm run serve
 ```
 
-### 7. 配置github可访问
+### 6. 配置github可访问
 
 添加配置`"homepage": "./",`至package.json
 
@@ -140,7 +139,9 @@ npm install gh-pages --save-dev
 
 github/settings/GitHub Pages切换source为gh-pages branch选项
 
-即可在*https://daaasheng.github.io/dashboard-react/*中访问项目
+即可在 *https://daaasheng.github.io/dashboard-react/* 中访问项目
+
+
 
 ### 分离Jest
 
