@@ -1,4 +1,4 @@
-
+[部署地址](https://daaasheng.github.io/dashboard-react/)
 
 ## 官网开发指南
 
@@ -121,6 +121,26 @@ serve -s build
 // script命令启动
 npm run serve
 ```
+
+### 7. 配置github可访问
+
+添加配置`"homepage": "./",`至package.json
+
+添加命令`"deploy": "gh-pages -d build"`至package.json/scripts
+
+```
+npm install gh-pages --save-dev
+```
+
+运行`npm run build`
+
+运行`npm run deploy`
+
+在远程代码仓库检查是否存在gh-pages分支
+
+github/settings/GitHub Pages切换source为gh-pages branch选项
+
+即可在*https://daaasheng.github.io/dashboard-react/*中访问项目
 
 ### 分离Jest
 
