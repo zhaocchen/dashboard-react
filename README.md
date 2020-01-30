@@ -95,3 +95,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 '@': path.resolve(__dirname, '../src'),
 'components': path.resolve(__dirname, '../src/components'),
 ```
+
+### 5. 添加ui组件库, 配置按需加载
+
+.babelrc添加配置
+
+```
+"plugins": [
+      ["import", {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        "style": "css" // `style: true` 会加载 less 文件
+      }]
+    ]
+```
