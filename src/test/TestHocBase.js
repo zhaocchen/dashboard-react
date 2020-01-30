@@ -39,7 +39,7 @@ const withLog = Comp => {
 // const NewCard = box(Card);
 const NewCard = box(withLog(Card));
 
-export default class TestHoc extends React.Component {
+export default class TestHocBase extends React.Component {
     render() {
         return (<div>
             <h1>高阶组件</h1>

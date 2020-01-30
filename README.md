@@ -141,7 +141,25 @@ github/settings/GitHub Pages切换source为gh-pages branch选项
 
 即可在 *https://daaasheng.github.io/dashboard-react/* 中访问项目
 
+### 7. 高阶组件装饰器
 
+安装`npm i -D babel-plugin-transform-decorators-legacy`
+
+添加`"transform-decorators-legacy"`至.babelrc
+
+如果babel>=7, 需要额外安装`npm i -D @babel/plugin-proposal-decorators`
+
+添加`["@babel/plugin-proposal-decorators", { "legacy": true }]`至.babelrc
+
+应用, 执行顺序`withLog->box`(自下而上)
+
+```
+@box
+@withLog
+class Card extends React.Component
+```
+
+注释： 装饰器只能用于class
 
 ### 分离Jest
 
