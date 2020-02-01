@@ -161,6 +161,15 @@ class Card extends React.Component
 
 注释： 装饰器只能用于class
 
+### 8. redux
+
+- redux
+- react-redux
+- npm -i -D redux-devtools
+- redux-logger
+- redux-thunk
+
+
 ### 分离Jest
 
 运行命令 jest 后会自动运行项目下所有.test.js和.spec.js这种格式的文件
