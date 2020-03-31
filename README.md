@@ -167,8 +167,13 @@ class Card extends React.Component
 - react-redux
 - npm -i -D redux-devtools
 - redux-logger
-- redux-thunk
+- redux-thunk=(dva+redux-saga+generator)
 
+### 9. router
+
+add react-router-dom
+
+注释：拦截
 
 ### 分离Jest
 

@@ -4,11 +4,14 @@ import './assets/css/App.css';
 import { Route  } from 'react-router';
 import page1 from './pages/page1';
 // import routers from './router';
+import { Button } from 'antd';
+import TestRouter from '@/test/TestRouter'
 
 function App() {
   return (
     <div className="App">
-      哈哈
+      <Button>Default</Button>
+      <TestRouter></TestRouter>
       {/* <Switch>
                   {
                       routers.map((route,index) => {
