@@ -1,6 +1,6 @@
 import  React from 'react'
-import {BrowserRouter, Link, Route, Switch, Redirect} from 'react-router-dom'
-// import {BrowserRouter, Link, Switch, Redirect} from 'react-router-dom'
+import {HashRouter, Link, Route, Switch, Redirect} from 'react-router-dom'
+// import {HashRouter, Link, Switch, Redirect} from 'react-router-dom'
 // import Route from './Route'
 
 function Home() {
@@ -42,7 +42,7 @@ function NoMatch() {
 
 export default class TestRouter extends React.Component{
     render() {
-        return <BrowserRouter>router
+        return <HashRouter>router
             <ul>
                 <Link to="/home">Home</Link>
                 <Link to="/about">About</Link>
@@ -55,7 +55,7 @@ export default class TestRouter extends React.Component{
                 {/* <Route component={NoMatch}></Route> */}
                 <Redirect to="/home"></Redirect>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     }
 }
 

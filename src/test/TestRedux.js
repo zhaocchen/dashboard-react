@@ -2,6 +2,7 @@ import React from 'react'
 import {createStore} from 'redux'
 
 const counterReducer = (state = 0, action) => {
+    console.log('counterReducer', state, action);
     switch(action.type) {
         case 'add':
             return state + 1
