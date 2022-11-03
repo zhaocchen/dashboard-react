@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./assets/img/logo.jpg";
 import "./assets/css/App.css";
-import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
+import { HashRouter, Switch, BrowserRouter, Router, Route, Redirect } from "react-router-dom";
 // import page1 from './pages/page1';
 // import routers from "./router";
 import { Button } from "antd";
@@ -18,18 +18,25 @@ const token = window.sessionStorage.getItem("token");
 
 function App() {
   return (
-    <div className="App">
-      <Button>Default</Button>
+    <BrowserRouter className="App" basename="/">
+      {/* <Button>Default</Button> */}
       {/* <TestRouter></TestRouter> */}
       {/* <TestRedux></TestRedux> */}
       {/* <TestReactRedux></TestReactRedux> */}
-      <ThemeColor></ThemeColor>
-      {/* <Route path="/home" component={Home} />
-      <Route path="/about" component={About} /> */}
+      {/* <ThemeColor></ThemeColor> */}
+      {/* <Route path="/home" component={Home} /> */}
+      {/* <Route path="/about" component={About} /> */}
 
-
-      <HashRouter></HashRouter>
-    </div>
+      <Route
+        exact
+        path="/"
+        render={() => (
+          <div>
+            <h1>Welcome</h1>
+          </div>
+        )}
+      />
+    </BrowserRouter>
   );
 }
 
